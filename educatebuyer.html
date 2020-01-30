@@ -1,0 +1,180 @@
+<html>
+<head>
+
+<title>HOUSING SYSTEM</title>
+<!-- ADDING CSS HERE -->
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+<script type="text/javascript" src="slider/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: #ffc107;
+  cursor: pointer;
+  padding:7px;
+  padding-left: 5%;
+  width:75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.content {
+  padding: 10px;
+  margin: 15px;
+  width: 90%;
+  display: none;  
+  text-align: left;
+  border: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.editbutton {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.editbutton:hover {
+  background-color: #008CBA;
+  color: white;
+  z-index: 9;
+}
+</style>
+</head>
+
+<body>
+<header class="header">
+<div class="wrapper">
+<h1>Buyer's Agent - Educate Buyer</h1>
+</div>
+</header>
+
+<p><br/>Checklist & Resources</p>
+<button type="button" class="collapsible">Importance of pre-qualification letter</button>
+<div class="content">
+  <p>This is the first step for a buyer in the process of purchasing a house. As this would let the buyer know his/her financial power to obtain a loan. Pre-qualification
+  letter can be obtained from any loan lender for free of charge. Pre-qualification is calculated based on the Credit history and the current job status and stable bank balance.</p>
+  <!--<button class="button editbutton" onclick="displayWarning()">Edit</button>-->
+</div>
+<button type="button" class="collapsible">List of Mortgage Lenders</button>
+<div class="content">
+  <p>
+  1. <a href="https://www.zillow.com/lender-profile/jubichackunkal/">Jubi Johnny Chackunkal</a><br>
+     100 E Big Beaver Suite 940<br>
+  Troy, MI 48084<br>
+  Phone:+1 (248) 513-5342 <br><br>
+  
+  2. <a href="https://www.zillow.com/lender-profile/jubichackunkal/">Johnny Chackunkal</a><br>
+     100 E Big Beaver Suite 940<br>
+  Troy, MI 48084<br>
+  Phone:+1 (348) 513-5342 <br>
+  
+  </p>
+  <!--<button class="button editbutton" onclick="displayWarning()">Edit</button>-->
+</div>
+<button type="button" class="collapsible">List of Attorneys</button>
+<div class="content">
+<p>
+  1. <a href="https://www.lawofficeofjenniferhaynesrose.com/">Jennifer Haynes Rose</a><br>
+     Law Office of Jennifer Haynes Rose<br> 1135 Kildaire Farm Road, Ste 200<br>
+  Cary, NC  27511<br>
+  Phone:+1 (919) 415-4719 <br><br>
+  
+  2. <a href="https://www.lawofficeofjenniferhaynesrose.com/">Jennifer Haynes</a><br>
+     Law Office of Jennifer Haynes Rose<br> 1135 Kildaire Farm Road, Ste 200<br>
+  Cary, NC  27511<br>
+  Phone:+1 (919) 415-4719 <br>
+  
+  </p>
+  <!--<button class="button editbutton" onclick="displayWarning()">Edit</button>-->
+</div>
+<button type="button" class="collapsible">List of Home Inspectors</button>
+<div class="content">  
+<p>
+  1. <a href="http://www.eldredgehomeinspection.com/">Eldredge Home Inspection</a><br>
+     Thorpe Dr, Cary, NC 27513<br>
+	 Phone:+1 (919) 830-3588 <br><br>
+  
+  2. <a href="http://www.eldredgehomeinspection.com/">Eldredge Home Inspection</a><br>
+     Thorpe Dr, Cary, NC 27513<br>
+	 Phone:+1 (919) 830-3588 <br><br>
+  
+  </p>
+  <!--<button class="button editbutton" onclick="displayWarning()">Edit</button>-->
+</div>
+<button type="button" class="collapsible">Logistics related to down payment, closing costs and additional discounts</button>
+<div class="content">
+  <p>This content is being udpated. Stay tuned!</p>
+  <!--<button class="button editbutton" onclick="displayWarning()">Edit</button>-->
+</div>
+<button type="button" class="collapsible">Immigration status and minimum job requirements</button>
+<div class="content">
+  <p>You should be on a work Visa or should have a work permit if you're not a US Citizen. 
+  Along with this you need to have a job offer letter and recent paychecks to prove your constant income source</p>
+  <!--<button class="button editbutton" onclick="displayWarning()">Edit</button>-->
+</div>
+
+<br><br><a href="buyeragentview.php">Go back</a>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+function displaySuccess() {
+  swal("", "Work in progress, Please come back soon!", "success");
+}
+function displayWarning() {
+  swal("", "Work in progress, Please come back soon!", "warning"); /* From:  https://sweetalert.js.org/guides/  */
+}
+</script>
+
+<p><br /></p>
+<!--Main body ends here -->
+<!--Footer starts here -->
+<br /> <br /> <br /> <br />
+ <br /> <br />  <br /> <br />
+ <br /> <br />
+
+<footer  class="footer">
+<div class="wrapper">
+<p>&copy; <a href="#">HOUSING SYSTEM</a>. All rights reserved 2019. </p>
+</div>
+</footer>
+<!--Footer ends here -->
+
+</body>
+</html>

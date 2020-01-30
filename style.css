@@ -1,0 +1,255 @@
+*{
+   margin: 0 0;
+   padding: 0 0; 
+}
+
+body{
+    font-family: arial,sans-seriff;
+    line-height: 25px;
+}
+.input-group {
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.wrapper{
+    border: 1px solid beige;
+    width: 90%;
+    margin:0 auto;
+    padding: 1% 1%;
+}
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.aheader {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #216;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+/* CSS for Header */
+.header{
+    alignment-adjust: central;
+    background-color: grey;
+    color: aliceblue;
+}
+/* CSS for Menu*/
+.menu ul{
+    list-style-type: none;    
+}
+.menu ul a{
+    color: grey;
+    text-decoration: none;
+    padding: 1%;
+    }
+.menu ul a:hover{
+    background-color: grey;
+    color: aliceblue;
+}
+.menu ul a li{
+   display: inline; 
+}
+
+.SearchBar { 
+     text-align:right;
+     top: 355px;
+     left: 575px;
+}
+.SearchBar {
+     height: 30px;
+     width: 500px;
+}
+
+/*CSS for slider*/
+.slidera{
+    margin: 2% auto;
+}
+
+
+/*Css for main body*/
+.main{
+    margin:1% 0;
+    
+}
+.main{
+    color: grey;
+    }
+.houses{
+    width  : 22.5%;
+    border: 1px solid grey;
+    margin:1%;
+    float : left;
+    text-align: center;
+}
+
+.houses:hover{
+    box-shadow: 0 0 3px 3px;
+}
+
+.houses img{
+    width: 100%;
+    }
+    
+.houses .house-title{
+   font-weight: bold;
+   color: black;
+    padding:1%;
+}  
+.house-price{
+    font-size:120%;
+    color: goldenrod;
+    padding: 1%;
+}
+
+ .house-added, .house-location{ 
+   font-weight: lighter;
+   font-size: 90%;
+   color: black;
+    padding:1%;
+} 
+
+.houses .btn-book{
+    padding :3%;
+    margin: 2%;
+    background-color: grey;
+    color: aliceblue;
+    border: none;    
+}
+.houses .btn-book:hover{
+    background-color: darkgrey;
+    }
+    
+.book-house img
+{
+    width: 75%;
+    float : left;
+   border-color: antiquewhite;
+    margin: 2% 2% 2% 0;
+    
+}
+
+.book-house h3{
+    text-align: center;
+    margin-bottom:  2%;
+    text-decoration:underline;
+    
+}
+
+.book-house p{
+ text-align: justify;
+ padding: 1%;
+ line-height: 30px;
+ color: #394d6d;   
+    }
+.main .booking-details{
+  width : 50%;
+  margin : 0 auto;
+  border: 2px antiquewhite;
+  padding: 2%;
+ margin: 2% auto;
+  }
+  
+.main .booking-details h3{
+    margin-bottom: 2%;
+}  
+
+.main .booking-details .name{
+    width: 20%;
+    float: left;
+    }
+
+.main .booking-details input[type='text'],.main .booking-details input[type='tel'],.main .booking-details input[type='email'],.main .booking-details input[type='password'],.main .booking-details textarea{
+    padding: 1%;
+    margin: 0.5%;
+    width :60%;
+    }
+.main .booking-details input[type='submit']
+{ text-align:center;
+    padding: 2%;
+    background-color:  darkgrey;
+    color: antiquewhite;
+    border: none;
+    margin-left: 21%
+    }
+.main .booking-details input[type='submit']:hover{
+    box-shadow: 0 0 3px  blue;
+}
+
+
+
+.main .booking-details input[type='reset']
+{ text-align:center;
+    padding: 2%;
+    background-color:  darkgrey;
+    color: antiquewhite;
+    border: none;
+    }
+.main .booking-details input[type='reset']:hover{
+    box-shadow: 0 0 3px red;
+}
+
+
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+
+/*CSS for footer*/
+.footer{
+    background-color: grey;
+    color: aliceblue;
+    
+}
+
+
+.footer p{
+    text-align: center;
+}
+
+.footer p a{
+    color: antiquewhite;
+}
+.footer p a:hover{
+    text-decoration:none;
+}
